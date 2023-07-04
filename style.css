@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Open+Sans:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Open+Sans:wght@300&family=Varela+Round&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 18px;
+}
+
+
+.logo img{
+    height: 35px;
+    margin: 8px 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.music-banner-container{
+    height: 75vh;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.banner{
+    max-height: 65vh;
+    width: 75vw;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    overflow: overlay;
+}
+
+.banner h1{
+    margin: 15px;
+}
+
+.song-item{
+    height: 5vh;
+    margin: 6px 10px;
+    display: flex;
+    align-items: center;
+    background-color: tomato;
+    gap: 11px;
+    border-radius: 18px;
+    font-size: small;
+}
+
+
+.song-item img{
+    height: 35px; 
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.song-item i {
+    cursor: pointer;
+}
+
+.audio-player-container{
+    position: sticky;
+    height: 15vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.audio-player{
+    height: 2vh;
+    padding: 10px 0;
+}
+
+.progress-bar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.player-buttons{
+    position: relative;
+    bottom: 1vh;
+    padding: 18px 0;
+    height: 9vh;
+    width: 100vw;
+    text-align: center;
+    color: white;
+}
+
+.player-buttons i{
+    cursor: pointer;
+}
+
+.song-info{
+    position: absolute;
+    left: 10vw;
+    top: 6vh;
+}
+
+.gif{
+    height: 20px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.song-info span{
+    margin-left: 8px;
+}
+
+
+::-webkit-scrollbar{
+    opacity: 0;
+}

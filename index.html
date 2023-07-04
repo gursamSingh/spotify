@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li class="logo">
+                <img src="./images/spotify-logo.png">
+                Spotify
+            </li>
+            <!-- <li class="brandName">Spotify</li> -->
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+
+    <!-- Music List / Banner Container -->
+    <div class="music-banner-container">
+        <div class="banner">
+            <h1>Best Of The Week</h1>
+
+            <div class="song-list">
+                <div class="song-item">
+                    <img src="./covers/1.jpg" alt="">
+                    <span class="song-name">Let me love you</span>
+                    <span>05:30</span>
+                    <i id = "0" class="fa-regular songItemPlay fa-circle-play"></i>
+                </div>
+
+                <div class="song-item">
+                    <img src="./covers/1.jpg" alt="">
+                    <span class="song-name">Let me love you</span>
+                    <span>05:30</span>
+                    <i id = "1" class="fa-regular songItemPlay fa-circle-play"></i>
+                </div>
+
+                <div class="song-item">
+                    <img src="./covers/1.jpg" alt="">
+                    <span class="song-name">Let me love you</span>
+                    <span>05:30</span>
+                    <i id = "2" class="fa-regular songItemPlay fa-circle-play"></i>
+                </div>
+
+                <div class="song-item">
+                    <img src="./covers/1.jpg" alt="">
+                    <span class="song-name">Let me love you</span>
+                    <span>05:30</span>
+                    <i id = "3" class="fa-regular songItemPlay fa-circle-play"></i>
+                </div>
+
+                <div class="song-item">
+                    <img src="./covers/1.jpg" alt="">
+                    <span class="song-name">Let me love you</span>
+                    <span>05:30</span>
+                    <i id = "4" class="fa-regular songItemPlay fa-circle-play"></i>
+                </div>
+
+                <div class="song-item">
+                    <img src="./covers/1.jpg" alt="">
+                    <span class="song-name">Let me love you</span>
+                    <span>05:30</span>
+                    <i id = "5" class="fa-regular songItemPlay fa-circle-play"></i>
+                </div>
+
+                <div class="song-item">
+                    <img src="./covers/1.jpg" alt="">
+                    <span class="song-name">Let me love you</span>
+                    <span>05:30</span>
+                    <i id = "6" class="fa-regular songItemPlay fa-circle-play"></i>
+                </div>
+
+                <div class="song-item">
+                    <img src="./covers/1.jpg" alt="">
+                    <span class="song-name">Let me love you</span>
+                    <span>05:30</span>
+                    <i id = "7" class="fa-regular songItemPlay fa-circle-play"></i>
+                </div>
+
+                <div class="song-item">
+                    <img src="./covers/1.jpg" alt="">
+                    <span class="song-name">Let me love you</span>
+                    <span>05:30</span>
+                    <i id = "8" class="fa-regular songItemPlay fa-circle-play"></i>
+                </div>
+
+                <div class="song-item">
+                    <img src="./covers/1.jpg" alt="">
+                    <span class="song-name">Let me love you</span>
+                    <span>05:30</span>
+                    <i id = "9" class="fa-regular songItemPlay fa-circle-play"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Bottom Music Player -->
+
+    <div class="audio-player-container">
+        <div class="audio-player">
+            <input class="progress-bar" type="range" min="0" value = "0" max="100">
+        </div>
+        
+        <div class="player-buttons">
+            <i class="fa-2x fa-solid previous fa-backward"></i>
+            <i class="fa-2x fa-solid fa-circle-play masterPlayButton"></i>
+            <i class="fa-2x fa-solid fa-forward"></i>
+        </div>
+
+        <div class="song-info">
+            <img src="./playing.gif" alt="" class="gif" > <span class="master-song-name">Let me love you</span> 
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
